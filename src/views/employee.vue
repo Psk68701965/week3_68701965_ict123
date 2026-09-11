@@ -2,7 +2,9 @@
   <div class="container mt-4">
     <!-- หัวข้อหน้า -->
     <h2 class="mb-3">รายชื่อพนักงาน</h2>
-    
+    <div>
+    <a href="/Add_employee" class="btn btn-primary mb-3">Add+</a>
+  </div>
     <!-- ตารางแสดงข้อมูลลูกค้า -->
     <table class="table table-bordered table-striped">
       <thead class="table-dark">
