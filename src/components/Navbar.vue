@@ -24,9 +24,15 @@
            <li class="nav-item">
             <router-link class="nav-link" to="/about">About</router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/rickroll">Rickroll</router-link>
-          </li>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            contact
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/contacts">แสดงข้อมูลติดต่อ</a></li>
+            <li><a class="dropdown-item" href="/Add_contact">เพิ่มข้อมูลติดต่อ</a></li>
+          </ul>
+        </li>
         </ul>
       </div>
     </div>
