@@ -44,8 +44,35 @@ const routes = [
     path: '/contacts',
     name: 'contacts',
     component: () => import( '../views/Contact.vue')
+  },
+  {
+    path: '/customer_crud',
+    name: 'customer_crud',
+    component: () => import( '../views/Customer_crud.vue')
+  },
+  {
+    path: '/employee_crud',
+    name: 'employee_crud',
+    component: () => import( '../views/Employee_crud.vue')
+  }
+  ,
+  {
+    path: '/employee_crud',
+    name: 'employee_crud',
+    component: () => import( '../views/Employee_crud.vue')
+  },
+  {
+    path: '/employee_crud',
+    name: 'employee_crud',
+    component: () => import( '../views/Employee_crud.vue')
+  },
+  {
+    path: '/contact_crud',
+    name: 'contact_crud',
+    component: () => import( '../views/contact_crud.vue')
   }
 ]
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

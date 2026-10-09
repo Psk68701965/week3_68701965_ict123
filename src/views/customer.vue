@@ -64,9 +64,11 @@ export default {
           throw new Error("ไม่สามารถดึงข้อมูลได้");
         }
 
-        customers.value = await response.json();
+        const result = await response.json();
+        customers.value = Array.isArray(result) ? result : (result.data || []);
       } catch (err) {
         error.value = err.message;
+        customers.value = [];
       } finally {
         loading.value = false;
       }

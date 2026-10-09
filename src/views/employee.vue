@@ -64,9 +64,11 @@ export default {
           throw new Error("ไม่สามารถดึงข้อมูลได้");
         }
 
-        employees.value = await response.json();
+        const result = await response.json();
+        employees.value = Array.isArray(result) ? result : (result.data || []);
       } catch (err) {
         error.value = err.message;
+        employees.value = [];
       } finally {
         loading.value = false;
       }

@@ -18,8 +18,16 @@ if (
 }
 
 try {
+    $conn->exec("CREATE TABLE IF NOT EXISTS contacts (
+        contact_id INT AUTO_INCREMENT PRIMARY KEY,
+        fullname VARCHAR(255) NOT NULL,
+        subject VARCHAR(255) NOT NULL,
+        detail TEXT NOT NULL,
+        email VARCHAR(255) NOT NULL
+    )");
+
     $sql = "INSERT INTO contacts
-            (fullname,subject, detail, email)
+            (fullname, subject, detail, email)
             VALUES
             (:fullname, :subject, :detail, :email)";
 
