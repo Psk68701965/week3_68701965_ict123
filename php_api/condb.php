@@ -15,6 +15,8 @@ try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    die("Connection failed: " . $e->getMessage());
+    http_response_code(500);
+    echo json_encode(["error" => "เชื่อมต่อฐานข้อมูลไม่สำเร็จ", "details" => $e->getMessage()]);
+    exit;
 }
 ?>

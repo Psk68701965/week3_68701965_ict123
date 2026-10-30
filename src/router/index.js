@@ -70,6 +70,16 @@ const routes = [
     path: '/contact_crud',
     name: 'contact_crud',
     component: () => import( '../views/contact_crud.vue')
+  },
+  {
+    path: '/product',
+    name: 'product',
+    component: () => import( '../views/product.vue')
+  },
+  {
+    path: '/asset',
+    name: 'asset',
+    component: () => import( '../views/asset.vue')
   }
 ]
 

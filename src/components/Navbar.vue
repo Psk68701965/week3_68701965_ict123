@@ -63,6 +63,12 @@
               <li><router-link class="dropdown-item" to="/contact_crud" @click="closeMenu">แก้ไขข้อมูลติดต่อ</router-link></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/product">product</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/asset">asset</router-link>
+          </li>
         </ul>
       </div>
     </div>
